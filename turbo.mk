@@ -19,12 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/tipsy/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/turbo/config/nfc_enhanced.mk)
 
-# Inherit some common Tipsy stuff.
-$(call inherit-product, vendor/tipsy/config/common_full_phone.mk)
+# Inherit some common Turbo stuff.
+$(call inherit-product, vendor/turbo/config/common_full_phone.mk)
 
-PRODUCT_NAME := tipsy_bacon
+# Inherit some common audio
+$(call inherit-product, vendor/turbo/config/common_apn.mk)
+
+PRODUCT_NAME := turbo_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
