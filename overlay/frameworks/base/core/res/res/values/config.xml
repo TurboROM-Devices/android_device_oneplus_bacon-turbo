@@ -34,11 +34,11 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">71</integer>
+    <!-- <integer name="config_deviceHardwareKeys">71</integer> -->
 
     <!-- Control path for disabling the capacitive hardware keys, if they exist.
          For example: "/proc/touchpanel/keypad_enable"  -->
-    <string name="config_deviceHardwareKeysFilePath" translatable="false">/proc/touchpanel/keypad_enable</string>
+    <!-- <string name="config_deviceHardwareKeysFilePath" translatable="false">/proc/touchpanel/keypad_enable</string> -->
 
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
@@ -53,7 +53,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">79</integer>
+    <!-- <integer name="config_deviceHardwareWakeKeys">79</integer> -->
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
