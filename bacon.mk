@@ -27,6 +27,10 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
+# Data fix
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/dataprebuilt/librmnetctl.so:system/lib/librmnetctl.so
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdb/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
