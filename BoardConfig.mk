@@ -41,8 +41,6 @@ TARGET_CPU_VARIANT := krait
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
-# Tipsy additions
-BLOCK_BASED_OTA=false
 # Optimizations
 CLANG_O3 := true
 STRICT_ALIASING := false
@@ -51,8 +49,8 @@ GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-5.3-uber/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 # Rom Toolchain
 TARGET_GCC_VERSION_EXP := 4.9
 
@@ -64,7 +62,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_DTBTOOL_ARGS := -2
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := bacon_defconfig
+TARGET_KERNEL_CONFIG := lightning_bacon_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
 
 # ANT+
