@@ -2,8 +2,6 @@
 # system.prop for one+
 #
 
-ro.sf.lcd_density=400
-
 # Bluetooth
 bluetooth.hfp.client=1
 
@@ -14,9 +12,9 @@ ro.qualcomm.cabl=0
 camera2.portability.force_api=1
 
 # Display
-persist.hwc.mdpcomp.enable=false
+ro.sf.lcd_density=480
+persist.hwc.mdpcomp.enable=true
 persist.sys.strictmode.disable=true
-persist.sys.ui.hw=true
 ro.opengles.version=196608
 
 # GPS
@@ -25,8 +23,6 @@ ro.gps.agps_provider=1
 
 # Media
 af.fast_track_multiplier=1
-
-audio.deep_buffer.media=true
 audio_hal.period_size=192
 use.voice.path.for.pcm.voip=true
 
@@ -72,6 +68,3 @@ persist.timed.enable=true
 
 # Wifi
 wifi.interface=wlan0
-
-# OTA
-ro.product.device=bacon
