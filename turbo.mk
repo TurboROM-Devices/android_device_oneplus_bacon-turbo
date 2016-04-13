@@ -27,6 +27,12 @@ $(call inherit-product, vendor/turbo/config/common_full_phone.mk)
 # Inherit some common audio
 $(call inherit-product, vendor/turbo/config/common_apn.mk)
 
+
+# ViPER4Android
+ PRODUCT_COPY_FILES += \
+     vendor/turbo/prebuilt/common/app/ViPER4Android.apk:system/app/ViPER4Android/ViPER4Android.apk
+
+
 PRODUCT_NAME := turbo_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
