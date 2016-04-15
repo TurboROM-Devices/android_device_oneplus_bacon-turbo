@@ -27,27 +27,27 @@ on early-init
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
-    write /sys/kernel/msm_limiter/scaling_governor interactive  Â Â Â 
-write /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay "20000 1400000:40000 1700000:20000"  Â Â Â 
-write /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 90  Â Â Â 
-write /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq 1190400  Â Â Â 
-write /sys/devices/system/cpu/cpufreq/interactive/io_is_busy 1  Â Â Â 
+    write /sys/kernel/msm_limiter/scaling_governor interactive 
+write /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay "20000 1400000:40000 1700000:20000"
+write /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 90
+write /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq 1190400
+write /sys/devices/system/cpu/cpufreq/interactive/io_is_busy 1 
 write /sys/devices/system/cpu/cpufreq/interactive/max_freq_hysteresis 100000 
- Â Â Â write /sys/devices/system/cpu/cpufreq/interactive/min_sample_time 40000 
- Â Â Â write /sys/devices/system/cpu/cpufreq/interactive/target_loads "85 1500000:90 1800000:70"  Â Â Â 
-write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 30000  Â Â Â 
-write /sys/devices/system/cpu/cpufreq/interactive/timer_slack 30000 Â Â Â Â 
-write /sys/kernel/msm_limiter/scaling_governor impulse  Â Â Â 
+write /sys/devices/system/cpu/cpufreq/interactive/min_sample_time 40000 
+write /sys/devices/system/cpu/cpufreq/interactive/target_loads "85 1500000:90 1800000:70" 
+write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 30000 
+write /sys/devices/system/cpu/cpufreq/interactive/timer_slack 30000 
+write /sys/kernel/msm_limiter/scaling_governor impulse  
 write /sys/devices/system/cpu/cpufreq/impulse/above_hispeed_delay "20000 1400000:40000 1700000:20000"
-  Â Â Â write /sys/devices/system/cpu/cpufreq/impulse/go_hispeed_load 90
- Â Â Â write /sys/devices/system/cpu/cpufreq/impulse/hispeed_freq 1190400 
- Â Â Â write /sys/devices/system/cpu/cpufreq/impulse/io_is_busy 1
-   Â Â Â write /sys/devices/system/cpu/cpufreq/impulse/max_freq_hysteresis 80000
-  Â Â Â write /sys/devices/system/cpu/cpufreq/impulse/min_sample_time 40000  Â Â Â 
-write /sys/devices/system/cpu/cpufreq/impulse/powersave_bias 1  Â Â Â 
+write /sys/devices/system/cpu/cpufreq/impulse/go_hispeed_load 90
+write /sys/devices/system/cpu/cpufreq/impulse/hispeed_freq 1190400 
+write /sys/devices/system/cpu/cpufreq/impulse/io_is_busy 1
+write /sys/devices/system/cpu/cpufreq/impulse/max_freq_hysteresis 80000
+write /sys/devices/system/cpu/cpufreq/impulse/min_sample_time 40000 
+write /sys/devices/system/cpu/cpufreq/impulse/powersave_bias 1 
 write /sys/devices/system/cpu/cpufreq/impulse/target_loads "85 1500000:90 1800000:70" 
- Â Â Â write /sys/devices/system/cpu/cpufreq/impulse/timer_rate 30000  Â Â Â 
-write /sys/devices/system/cpu/cpufreq/impulse/timer_slack 30000  Â Â Â 
+write /sys/devices/system/cpu/cpufreq/impulse/timer_rate 30000
+write /sys/devices/system/cpu/cpufreq/impulse/timer_slack 30000 
 write /sys/module/msm_thermal/core_control/enabled 1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
@@ -82,10 +82,10 @@ write /sys/module/msm_thermal/core_control/enabled 1
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "ondemand"
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "ondemand"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "ondemand"
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "ondemand"
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
