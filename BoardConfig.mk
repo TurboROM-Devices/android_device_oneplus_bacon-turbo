@@ -152,7 +152,7 @@ TARGET_POWERHAL_VARIANT := none
 BOARD_USES_QCOM_HARDWARE := true
 
 # Radio
-TARGET_RIL_VARIANT := caf
+# TARGET_RIL_VARIANT := caf
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
